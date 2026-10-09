@@ -1,11 +1,10 @@
 /**
  * Central site configuration.
  *
- * >>> UPDATE `GITHUB_OWNER` BEFORE DEPLOYING <<<
- * Replace "YOUR-USERNAME" with your actual GitHub username or organization.
- * Every download, GitHub and docs link on the site is derived from this value.
+ * `GITHUB_OWNER` is your GitHub username/organization. Every download, GitHub
+ * and docs link on the site is derived from it.
  */
-export const GITHUB_OWNER = "YOUR-USERNAME";
+export const GITHUB_OWNER = "Bolu-Tife-dev";
 export const GITHUB_REPO = "mockpulse-ai-app";
 
 export const REPO_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}`;
@@ -37,6 +36,8 @@ export const SITE = {
   tagline: "AI-powered mock technical interviews",
   description:
     "Practice real-world Frontend, Backend and Full-Stack technical interviews with a realistic, lip-synced AI avatar. 100% free and open source.",
+  // Used only for SEO/OG metadata. Update to your Vercel production URL
+  // (e.g. "https://mockpulse-web.vercel.app") after deploying.
   url: `https://${GITHUB_OWNER}.github.io/${GITHUB_REPO}`,
 } as const;
 

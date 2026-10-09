@@ -30,7 +30,7 @@ Built with **Next.js (App Router)**, **React**, **Tailwind CSS v4**,
 ## Local development
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/mockpulse-ai-app.git
+git clone https://github.com/Bolu-Tife-dev/mockpulse-ai-app.git
 cd mockpulse-ai-app
 npm install
 npm run dev        # http://localhost:3000
@@ -51,15 +51,15 @@ npm run lint       # eslint
 All site-wide links (downloads, GitHub, docs, issues) are defined in a single
 file: [`src/lib/site.ts`](src/lib/site.ts).
 
-### 1. Set your GitHub username
+### 1. GitHub username (already set)
 
 ```ts
-export const GITHUB_OWNER = "YOUR-USERNAME"; // ← change this
+export const GITHUB_OWNER = "Bolu-Tife-dev";
 export const GITHUB_REPO = "mockpulse-ai-app";
 ```
 
-This automatically updates the nav "Star on GitHub" badge, the footer links,
-the docs link, and the release links.
+This automatically sets the nav "Star on GitHub" badge, the footer links,
+the docs link, and the release links to your repo.
 
 ### 2. Point the download buttons at real installer assets
 
