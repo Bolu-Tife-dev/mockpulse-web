@@ -26,9 +26,9 @@ export type Platform = "windows" | "macos" | "linux";
  * (see README.md → "Updating download URLs").
  */
 export const DOWNLOADS: Record<Platform, string> = {
-  windows: RELEASES_URL,
-  macos: RELEASES_URL,
-  linux: RELEASES_URL,
+  windows: `${RELEASES_URL}/download/MockPulse-Setup.exe`,
+  macos: `${RELEASES_URL}/download/MockPulse-Setup.dmg`,
+  linux: `${RELEASES_URL}/download/MockPulse-Setup.AppImage`,
 };
 
 export const SITE = {
@@ -36,9 +36,8 @@ export const SITE = {
   tagline: "AI-powered mock technical interviews",
   description:
     "Practice real-world Frontend, Backend and Full-Stack technical interviews with a realistic, lip-synced AI avatar. 100% free and open source.",
-  // Used only for SEO/OG metadata. Update to your Vercel production URL
-  // (e.g. "https://mockpulse-web.vercel.app") after deploying.
-  url: `https://${GITHUB_OWNER}.github.io/${GITHUB_REPO}`,
+  // Production URL (Vercel) — used for SEO/OG metadata.
+  url: "https://mockpulse-web.vercel.app",
 } as const;
 
 export const NAV_LINKS = [
